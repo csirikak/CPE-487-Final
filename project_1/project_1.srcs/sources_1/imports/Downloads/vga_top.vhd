@@ -16,12 +16,16 @@ ENTITY vga_top IS
         vga_green : OUT STD_LOGIC_VECTOR (3 DOWNTO 0);
         vga_blue  : OUT STD_LOGIC_VECTOR (3 DOWNTO 0);
         vga_hsync : OUT STD_LOGIC;
-        vga_vsync : OUT STD_LOGIC
+        vga_vsync : OUT STD_LOGIC;
+        dac_MCLK : OUT STD_LOGIC; -- outputs to PMODI2L DAC
+		dac_LRCK : OUT STD_LOGIC;
+		dac_SCLK : OUT STD_LOGIC;
+		dac_SDIN : OUT STD_LOGIC
 
     );
 END vga_top;
 
-ARCHITECTURE Behavioral OF vga_top IS
+    ARCHITECTURE Behavioral OF vga_top IS
     SIGNAL pxl_clk : STD_LOGIC;
     -- internal signals to connect modules
     SIGNAL S_red, S_green, S_blue : STD_LOGIC_vector (3 downto 0);
@@ -34,7 +38,15 @@ ARCHITECTURE Behavioral OF vga_top IS
 	SIGNAL lines_S             :  UNSIGNED (5 DOWNTO 0);
 	SIGNAL level_S             :  UNSIGNED (5 DOWNTO 0);
 	SIGNAL gridAddress_S          :  UNSIGNED (7 DOWNTO 0);
-  
+    COMPONENT TetrisMusic IS
+	PORT (
+		clk_in : IN STD_LOGIC;
+		dac_MCLK : OUT STD_LOGIC; -- outputs to PMODI2L DAC
+		dac_LRCK : OUT STD_LOGIC;
+		dac_SCLK : OUT STD_LOGIC;
+		dac_SDIN : OUT STD_LOGIC
+	);
+    END COMPONENT;
     COMPONENT GPU IS
         PORT (
         pixel_row: in std_logic_vector(10 downto 0);
@@ -93,7 +105,14 @@ ARCHITECTURE Behavioral OF vga_top IS
 BEGIN
     -- vga_driver only drives MSB of red, green & blue
     -- so set other bits to zero
-    
+    music: TetrisMusic
+	PORT MAP (
+		clk_in => clk_in,
+		dac_MCLK =>dac_MCLK, -- outputs to PMODI2L DAC
+		dac_LRCK => dac_LRCK,
+		dac_SCLK => dac_SCLK,
+		dac_SDIN => dac_SDIN
+	);
     my_gpu : GPU
     PORT MAP(
         pixel_row => S_pixel_row,

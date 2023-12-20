@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -87,8 +85,15 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
+  {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/ChannelCombiner.vhd}
+  {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/ClkDiv2.vhd}
+  {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/MusicBox.vhd}
+  {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/MusicClock.vhd}
+  {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/Square Wave Generator.vhd}
+  {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/TetrisMusic.vhd}
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0.vhd}
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd}
+  {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/dac.vhd}
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd}
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/grid.vhd}
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/letter_handle.vhd}

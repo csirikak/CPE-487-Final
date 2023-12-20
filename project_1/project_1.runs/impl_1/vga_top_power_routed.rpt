@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Wed Dec 20 08:03:11 2023
+| Date             : Wed Dec 20 13:28:26 2023
 | Host             : Senku running 64-bit major release  (build 9200)
 | Command          : report_power -file vga_top_power_routed.rpt -pb vga_top_power_summary_routed.pb -rpx vga_top_power_routed.rpx
 | Design           : vga_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.217        |
+| Total On-Chip Power (W)  | 0.226        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.120        |
+| Dynamic (W)              | 0.128        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.0         |
@@ -52,17 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |     0.001 |      810 |       --- |             --- |
-|   LUT as Logic |     0.001 |      450 |     63400 |            0.71 |
-|   CARRY4       |    <0.001 |       70 |     15850 |            0.44 |
-|   Register     |    <0.001 |      109 |    126800 |            0.09 |
-|   Others       |     0.000 |       22 |       --- |             --- |
-| Signals        |    <0.001 |      606 |       --- |             --- |
+| Clocks         |     0.002 |        5 |       --- |             --- |
+| Slice Logic    |     0.003 |     1278 |       --- |             --- |
+|   LUT as Logic |     0.002 |      619 |     63400 |            0.98 |
+|   CARRY4       |    <0.001 |      127 |     15850 |            0.80 |
+|   Register     |    <0.001 |      271 |    126800 |            0.21 |
+|   BUFG         |    <0.001 |        2 |        32 |            6.25 |
+|   F7/F8 Muxes  |    <0.001 |        5 |     63400 |           <0.01 |
+|   Others       |     0.000 |       42 |       --- |             --- |
+| Signals        |     0.002 |      896 |       --- |             --- |
 | MMCM           |     0.116 |        1 |         6 |           16.67 |
-| I/O            |    <0.001 |       15 |       210 |            7.14 |
+| I/O            |     0.005 |       19 |       210 |            9.05 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.217 |          |           |                 |
+| Total          |     0.226 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.003 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.023 |       0.007 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.083 |       0.065 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -143,12 +145,15 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| vga_top          |     0.120 |
+| vga_top          |     0.128 |
 |   clk_wiz_0_inst |     0.117 |
 |     U0           |     0.117 |
+|   music          |     0.003 |
+|     mc1          |     0.001 |
 |   my_gpu         |     0.002 |
 |     wh1          |     0.002 |
 |       letter     |     0.001 |
+|   vga_driver     |     0.001 |
 +------------------+-----------+
 
 
