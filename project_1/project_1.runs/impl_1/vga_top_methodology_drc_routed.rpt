@@ -1,0 +1,267 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Dec 20 00:37:11 2023
+| Host         : Senku running 64-bit major release  (build 9200)
+| Command      : report_methodology -file vga_top_methodology_drc_routed.rpt -pb vga_top_methodology_drc_routed.pb -rpx vga_top_methodology_drc_routed.rpx
+| Design       : vga_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 46
++-----------+----------+--------------------------------+------------+
+| Rule      | Severity | Description                    | Violations |
++-----------+----------+--------------------------------+------------+
+| TIMING-16 | Warning  | Large setup violation          | 12         |
+| TIMING-20 | Warning  | Non-clocked latch              | 33         |
+| LATCH-1   | Advisory | Existing latches in the design | 1          |
++-----------+----------+--------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -2.453 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/blue_out_reg[3]_lopt_replica_2/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -2.492 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/blue_out_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -2.511 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/green_out_reg[3]_lopt_replica_2/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -2.513 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/red_out_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -2.545 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/green_out_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -2.630 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/red_out_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -2.639 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/red_out_reg[1]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -3.076 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/green_out_reg[3]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -3.099 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/green_out_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -3.129 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/blue_out_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -3.150 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/red_out_reg[3]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -3.152 ns between my_gpu/wh1/letter/output_mem_reg[11]/C (clocked by sys_clk_pin) and vga_driver/blue_out_reg[3]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch my_gpu/size_reg[31] cannot be properly analyzed as its control pin my_gpu/size_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch my_gpu/size_reg[4] cannot be properly analyzed as its control pin my_gpu/size_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[0] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[10] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[1] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[2] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[3] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[4] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[5] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[6] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[7] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[8] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch my_gpu/wh1/x_norm_reg[9] cannot be properly analyzed as its control pin my_gpu/wh1/x_norm_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch my_gpu/x_norm_reg[0] cannot be properly analyzed as its control pin my_gpu/x_norm_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch my_gpu/x_norm_reg[1] cannot be properly analyzed as its control pin my_gpu/x_norm_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch my_gpu/x_norm_reg[2] cannot be properly analyzed as its control pin my_gpu/x_norm_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch my_gpu/x_norm_reg[3] cannot be properly analyzed as its control pin my_gpu/x_norm_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch my_gpu/x_norm_reg[4] cannot be properly analyzed as its control pin my_gpu/x_norm_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch my_gpu/x_norm_reg[5] cannot be properly analyzed as its control pin my_gpu/x_norm_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch my_gpu/x_norm_reg[6] cannot be properly analyzed as its control pin my_gpu/x_norm_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch my_gpu/x_norm_reg[7] cannot be properly analyzed as its control pin my_gpu/x_norm_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch my_gpu/x_norm_reg[8] cannot be properly analyzed as its control pin my_gpu/x_norm_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch my_gpu/x_norm_reg[9] cannot be properly analyzed as its control pin my_gpu/x_norm_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch my_gpu/y_norm_reg[0] cannot be properly analyzed as its control pin my_gpu/y_norm_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch my_gpu/y_norm_reg[1] cannot be properly analyzed as its control pin my_gpu/y_norm_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch my_gpu/y_norm_reg[2] cannot be properly analyzed as its control pin my_gpu/y_norm_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch my_gpu/y_norm_reg[3] cannot be properly analyzed as its control pin my_gpu/y_norm_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch my_gpu/y_norm_reg[4] cannot be properly analyzed as its control pin my_gpu/y_norm_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch my_gpu/y_norm_reg[5] cannot be properly analyzed as its control pin my_gpu/y_norm_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch my_gpu/y_norm_reg[6] cannot be properly analyzed as its control pin my_gpu/y_norm_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch my_gpu/y_norm_reg[7] cannot be properly analyzed as its control pin my_gpu/y_norm_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch my_gpu/y_norm_reg[8] cannot be properly analyzed as its control pin my_gpu/y_norm_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch my_gpu/y_norm_reg[9] cannot be properly analyzed as its control pin my_gpu/y_norm_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 33 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

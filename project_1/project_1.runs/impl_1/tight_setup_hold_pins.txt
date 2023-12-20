@@ -1,0 +1,16 @@
++====================+===================+==============================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                          |
++====================+===================+==============================================+
+| sys_clk_pin        | sys_clk_pin       | vga_driver/blue_out_reg[2]/D                 |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/blue_out_reg[3]_lopt_replica_2/D  |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/green_out_reg[3]_lopt_replica_2/D |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/red_out_reg[3]_lopt_replica/D     |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/red_out_reg[3]/D                  |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/blue_out_reg[3]_lopt_replica/D    |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/green_out_reg[3]/D                |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/green_out_reg[3]_lopt_replica/D   |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/blue_out_reg[3]/D                 |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/red_out_reg[1]/D                  |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/red_out_reg[1]_lopt_replica/D     |
+| sys_clk_pin        | sys_clk_pin       | vga_driver/green_out_reg[2]/D                |
++--------------------+-------------------+----------------------------------------------+
