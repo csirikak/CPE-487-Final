@@ -1,0 +1,534 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Dec 19 20:43:50 2023
+# Process ID: 18344
+# Current directory: C:/Users/n_j/code/CPE 487/Final Project/Final Project.runs/synth_1
+# Command line: vivado.exe -log tetrisComponent.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tetrisComponent.tcl
+# Log file: C:/Users/n_j/code/CPE 487/Final Project/Final Project.runs/synth_1/tetrisComponent.vds
+# Journal file: C:/Users/n_j/code/CPE 487/Final Project/Final Project.runs/synth_1\vivado.jou
+# Running On: Kregler, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16370 MB
+#-----------------------------------------------------------
+source tetrisComponent.tcl -notrace
+Command: synth_design -top tetrisComponent -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3056
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 916.234 ; gain = 444.660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tetrisComponent' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:26]
+WARNING: [Synth 8-614] signal 'paused' is read in the process but is not in the sensitivity list [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:94]
+WARNING: [Synth 8-614] signal 'pseudoRandom' is read in the process but is not in the sensitivity list [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:94]
+WARNING: [Synth 8-614] signal 'gameTick' is read in the process but is not in the sensitivity list [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:94]
+WARNING: [Synth 8-614] signal 'nextActiveShape' is read in the process but is not in the sensitivity list [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:125]
+WARNING: [Synth 8-614] signal 'lines' is read in the process but is not in the sensitivity list [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:263]
+WARNING: [Synth 8-614] signal 'gridAddress' is read in the process but is not in the sensitivity list [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'tetrisComponent' (0#1) [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:26]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][0,13][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][0,14][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][0,15][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][0,16][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][0,17][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][0,18][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][0,19][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][1,13][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][1,14][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][1,15][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][1,16][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][1,17][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][1,18][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][1,19][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][2,13][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][2,14][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][2,15][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][2,16][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][2,17][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][2,18][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][2,19][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][3,13][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][3,14][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][3,15][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][3,16][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][3,17][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][3,18][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][3,19][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][4,13][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][4,14][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][4,15][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][4,16][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][4,17][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][4,18][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][4,19][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][5,13][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][5,14][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][5,15][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][5,16][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][5,17][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][5,18][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][5,19][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][6,13][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][6,14][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][6,15][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][6,16][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][6,17][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][6,18][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][6,19][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][7,13][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][7,14][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][7,15][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][7,16][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][7,17][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][7,18][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][7,19][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][8,13][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][8,14][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][8,15][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][8,16][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][8,17][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][8,18][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][8,19][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][9,13][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][9,14][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][9,15][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][9,16][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][9,17][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][9,18][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element board_reg[cells][9,19][shape] was removed.  [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:219]
+WARNING: [Synth 8-3848] Net needShape in module/entity tetrisComponent does not have driver. [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:36]
+WARNING: [Synth 8-3848] Net nextShapeGrid in module/entity tetrisComponent does not have driver. [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:9]
+WARNING: [Synth 8-3848] Net scoreOut in module/entity tetrisComponent does not have driver. [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:12]
+WARNING: [Synth 8-3848] Net linesOut in module/entity tetrisComponent does not have driver. [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:13]
+WARNING: [Synth 8-3848] Net levelOut in module/entity tetrisComponent does not have driver. [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:14]
+WARNING: [Synth 8-7129] Port nextShapeGrid[7] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[6] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[5] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[4] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[3] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[2] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[1] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[0] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[10] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[9] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[8] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[7] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[6] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[5] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[4] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[3] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[2] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[1] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[0] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[5] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[4] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[3] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[2] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[1] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[0] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[5] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[4] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[3] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[2] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[1] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[0] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGridAddress[2] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGridAddress[1] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGridAddress[0] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pauseClick in module tetrisComponent is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1076.129 ; gain = 604.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1076.129 ; gain = 604.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1076.129 ; gain = 604.555
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'gameTick_reg' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:98]
+WARNING: [Synth 8-327] inferring latch for variable 'pseudoRandom_reg' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:97]
+WARNING: [Synth 8-327] inferring latch for variable 'ROW_INDEX_reg' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:231]
+WARNING: [Synth 8-327] inferring latch for variable 'deleteRow_reg' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:228]
+WARNING: [Synth 8-327] inferring latch for variable 'nextActiveShape_reg[blocks][0][row]' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'nextActiveShape_reg[blocks][0][col]' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'nextActiveShape_reg[blocks][1][row]' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'nextActiveShape_reg[blocks][1][col]' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'nextActiveShape_reg[blocks][2][row]' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'nextActiveShape_reg[blocks][2][col]' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'nextActiveShape_reg[blocks][3][row]' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'nextActiveShape_reg[blocks][3][col]' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'findCompletedRows.ROW_IS_COMPLETE_reg' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:269]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1076.129 ; gain = 604.555
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 4     
+	   4 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 8     
+	   3 Input    4 Bit       Adders := 6     
++---Registers : 
+	                7 Bit    Registers := 14    
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 8     
+	  20 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   6 Input    3 Bit        Muxes := 3     
+	   5 Input    3 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 4     
+	   7 Input    1 Bit        Muxes := 3     
+	  11 Input    1 Bit        Muxes := 51    
+	  20 Input    1 Bit        Muxes := 1     
+	  19 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+	  10 Input    1 Bit        Muxes := 1     
+	  61 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port nextShapeGrid[7] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[6] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[5] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[4] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[3] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[2] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[1] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGrid[0] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[10] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[9] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[8] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[7] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[6] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[5] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[4] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[3] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[2] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[1] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scoreOut[0] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[5] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[4] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[3] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[2] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[1] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port linesOut[0] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[5] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[4] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[3] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[2] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[1] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port levelOut[0] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGridAddress[2] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGridAddress[1] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nextShapeGridAddress[0] in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pauseClick in module tetrisComponent is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (pseudoRandom_reg[10]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (pseudoRandom_reg[2]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (pseudoRandom_reg[1]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (pseudoRandom_reg[0]) is unused and will be removed from module tetrisComponent.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[shape][6]/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[shape][5]/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[shape][4]/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[shape][3]/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[shape][2]/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[shape][1]/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[shape][0]/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+WARNING: [Synth 8-3332] Sequential element (ROW_INDEX_reg[4]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (ROW_INDEX_reg[3]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (deleteRow_reg) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][0][row][4]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][0][row][3]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][0][row][2]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][0][row][1]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][0][row][0]) is unused and will be removed from module tetrisComponent.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][0][row][4]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][0][row][3]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][0][row][2]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][0][row][1]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][0][row][0]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][0][col][3]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][0][col][2]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][0][col][1]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][0][col][0]) is unused and will be removed from module tetrisComponent.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][0][col][3]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][0][col][2]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][0][col][1]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][0][col][0]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][1][row][4]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][1][row][3]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][1][row][2]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][1][row][1]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][1][row][0]) is unused and will be removed from module tetrisComponent.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][1][row][4]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][1][row][3]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][1][row][2]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][1][row][1]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][1][row][0]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][1][col][3]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][1][col][2]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][1][col][1]) is unused and will be removed from module tetrisComponent.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][1][col][3]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][1][col][2]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][1][col][1]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][2][row][4]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][2][row][3]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][2][row][2]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][2][row][1]) is unused and will be removed from module tetrisComponent.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][2][row][4]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][2][row][3]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][2][row][2]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][2][row][1]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][2][col][3]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][2][col][2]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][2][col][1]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][2][col][0]) is unused and will be removed from module tetrisComponent.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][2][col][3]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][2][col][2]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][2][col][1]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][2][col][0]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][3][row][4]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][3][row][3]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][3][row][2]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][3][row][1]) is unused and will be removed from module tetrisComponent.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][3][row][4]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][3][row][3]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][3][row][2]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][3][row][1]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][3][col][3]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][3][col][2]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][3][col][1]) is unused and will be removed from module tetrisComponent.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][3][col][3]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][3][col][2]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'nextActiveShape_reg[blocks][3][col][1]__0/Q' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:109]
+WARNING: [Synth 8-3332] Sequential element (findCompletedRows.ROW_IS_COMPLETE_reg) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (gameTick_reg) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][1][col][0]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][2][row][0]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][3][row][0]) is unused and will be removed from module tetrisComponent.
+WARNING: [Synth 8-3332] Sequential element (nextActiveShape_reg[blocks][3][col][0]) is unused and will be removed from module tetrisComponent.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out0[2] with 1st driver pin 'i_0/i_0/O' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:306]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out0[2] with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:306]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net out0[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:306]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out0[2] with 1st driver pin 'i_0/i_17/O' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:293]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin out0[2] with 2nd driver pin 'GND' [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:293]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net out0[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/n_j/code/CPE 487/Final Project/Final Project.srcs/sources_1/new/tetrisComponent.vhd:293]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1234.898 ; gain = 763.324
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1234.898 ; gain = 763.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1234.898 ; gain = 763.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1234.898 ; gain = 763.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1234.898 ; gain = 763.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1234.898 ; gain = 763.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1234.898 ; gain = 763.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1234.898 ; gain = 763.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1234.898 ; gain = 763.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUF  |     3|
+|2     |OBUFT |    31|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    34|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1234.898 ; gain = 763.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 123 critical warnings and 210 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1234.898 ; gain = 763.324
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 1234.898 ; gain = 763.324
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1239.738 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1338.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c4d731c
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 210 Warnings, 123 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1338.516 ; gain = 873.402
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1338.516 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/n_j/code/CPE 487/Final Project/Final Project.runs/synth_1/tetrisComponent.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tetrisComponent_utilization_synth.rpt -pb tetrisComponent_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 19 20:44:25 2023...
