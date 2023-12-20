@@ -37,7 +37,6 @@ ARCHITECTURE Behavioral OF vga_top IS
   
     COMPONENT GPU IS
         PORT (
-        clock: in std_logic;
         pixel_row: in std_logic_vector(10 downto 0);
 		pixel_col: in std_logic_vector(10 downto 0);
 		color_in: in std_logic_vector (2 downto 0);
@@ -97,7 +96,6 @@ BEGIN
     
     my_gpu : GPU
     PORT MAP(
-        clock => clk_in,
         pixel_row => S_pixel_row,
         pixel_col => S_pixel_col,
         color_in =>grid_s,

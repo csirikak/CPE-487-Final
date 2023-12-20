@@ -12,20 +12,27 @@ entity grid is
 end grid;
 
 architecture Behavioral of grid is
+COMPONENT square IS
+		PORT (
+        x: in unsigned (10 downto 0);
+        y: in unsigned (10 downto 0);
+        color_in: in std_logic_vector (2 downto 0);
+        color_out: out std_logic_vector(11 downto 0)
+		);
+	END COMPONENT;
+	signal x_norm: unsigned (10 downto 0);
+	signal y_norm: unsigned (10 downto 0);
 begin
     address <= shift_right((shift_right(x,5)+5*shift_right(y,5)),0) (7 downto 0);
-    color(0)<=color_in(0);
-    color(1)<=color_in(0);
-    color(2)<=color_in(0);
-    color(3)<=color_in(0);
-    color(4)<=color_in(1);
-    color(5)<=color_in(1);
-    color(6)<=color_in(1);
-    color(7)<=color_in(1);
-    color(8)<=color_in(2);
-    color(9)<=color_in(2);
-    color(10)<=color_in(2);
-    color(11)<=color_in(2);
     
+    x_norm<=shift_right((x-32*shift_right(x,5)),0)(10 downto 0);
+    y_norm<=shift_right((y-32*shift_right(y,5)),0)(10 downto 0);
+    sq: square
+	PORT MAP(
+	x => x_norm,
+    y => y_norm,
+    color_in => color_in,
+    color_out => color
+    );
 
 end Behavioral;

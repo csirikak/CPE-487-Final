@@ -92,6 +92,7 @@ read_vhdl -library xil_defaultlib {
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd}
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/grid.vhd}
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/letter_handle.vhd}
+  {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/square.vhd}
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/tetris_package.vhd}
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/tetrisComponent.vhd}
   {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/vga_sync.vhd}

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Wed Dec 20 00:37:12 2023
+| Date             : Wed Dec 20 08:03:11 2023
 | Host             : Senku running 64-bit major release  (build 9200)
 | Command          : report_power -file vga_top_power_routed.rpt -pb vga_top_power_summary_routed.pb -rpx vga_top_power_routed.rpx
 | Design           : vga_top
@@ -52,14 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      462 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      238 |     63400 |            0.38 |
-|   CARRY4       |    <0.001 |       35 |     15850 |            0.22 |
-|   Register     |    <0.001 |       90 |    126800 |            0.07 |
-|   F7/F8 Muxes  |    <0.001 |        4 |     63400 |           <0.01 |
-|   Others       |     0.000 |       14 |       --- |             --- |
-| Signals        |    <0.001 |      313 |       --- |             --- |
+| Clocks         |    <0.001 |        5 |       --- |             --- |
+| Slice Logic    |     0.001 |      810 |       --- |             --- |
+|   LUT as Logic |     0.001 |      450 |     63400 |            0.71 |
+|   CARRY4       |    <0.001 |       70 |     15850 |            0.44 |
+|   Register     |    <0.001 |      109 |    126800 |            0.09 |
+|   Others       |     0.000 |       22 |       --- |             --- |
+| Signals        |    <0.001 |      606 |       --- |             --- |
 | MMCM           |     0.116 |        1 |         6 |           16.67 |
 | I/O            |    <0.001 |       15 |       210 |            7.14 |
 | Static Power   |     0.097 |          |           |                 |
@@ -73,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.019 |       0.003 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.083 |       0.065 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -147,7 +146,9 @@ Table of Contents
 | vga_top          |     0.120 |
 |   clk_wiz_0_inst |     0.117 |
 |     U0           |     0.117 |
-|   my_gpu         |     0.001 |
+|   my_gpu         |     0.002 |
+|     wh1          |     0.002 |
+|       letter     |     0.001 |
 +------------------+-----------+
 
 

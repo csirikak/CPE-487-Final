@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Wed Dec 20 00:33:14 2023
-# Process ID: 32684
+# Start of session at: Wed Dec 20 07:59:10 2023
+# Process ID: 42040
 # Current directory: C:/codes/project digital/design/CPE-487-Final/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log vga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_top.tcl
 # Log file: C:/codes/project digital/design/CPE-487-Final/project_1/project_1.runs/synth_1/vga_top.vds
@@ -12,7 +12,7 @@
 # Running On: Senku, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 17054 MB
 #-----------------------------------------------------------
 source vga_top.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 451.059 ; gain = 182.609
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 451.016 ; gain = 180.953
 Command: read_checkpoint -auto_incremental -incremental {C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/utils_1/imports/synth_1/tetrisComponent.dcp}
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/utils_1/imports/synth_1/tetrisComponent.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -25,31 +25,34 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 38456
+INFO: [Synth 8-7075] Helper process launched with PID 37896
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1305.273 ; gain = 439.715
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1306.859 ; gain = 441.637
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'vga_top' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/imports/Downloads/vga_top.vhd:24]
-INFO: [Synth 8-3491] module 'GPU' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:6' bound to instance 'my_gpu' of component 'GPU' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/imports/Downloads/vga_top.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'GPU' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:19]
-INFO: [Synth 8-3491] module 'word_handle' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:4' bound to instance 'wh1' of component 'word_handle' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'word_handle' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:17]
-WARNING: [Synth 8-614] signal 'size' is read in the process but is not in the sensitivity list [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:35]
-WARNING: [Synth 8-614] signal 'space' is read in the process but is not in the sensitivity list [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:35]
-WARNING: [Synth 8-614] signal 'word' is read in the process but is not in the sensitivity list [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:35]
-WARNING: [Synth 8-614] signal 'res' is read in the process but is not in the sensitivity list [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:35]
-INFO: [Synth 8-3491] module 'alphabet' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/letter_handle.vhd:5' bound to instance 'letter' of component 'alphabet' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'alphabet' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/letter_handle.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'alphabet' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/letter_handle.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'word_handle' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:17]
-INFO: [Synth 8-3491] module 'grid' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/grid.vhd:4' bound to instance 'g1' of component 'grid' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:135]
+INFO: [Synth 8-3491] module 'GPU' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:6' bound to instance 'my_gpu' of component 'GPU' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/imports/Downloads/vga_top.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'GPU' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:18]
+INFO: [Synth 8-3491] module 'word_handle' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:4' bound to instance 'wh1' of component 'word_handle' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'word_handle' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:16]
+WARNING: [Synth 8-614] signal 'size' is read in the process but is not in the sensitivity list [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:31]
+WARNING: [Synth 8-614] signal 'space' is read in the process but is not in the sensitivity list [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:31]
+WARNING: [Synth 8-614] signal 'word' is read in the process but is not in the sensitivity list [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:31]
+INFO: [Synth 8-3491] module 'alphabet' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/letter_handle.vhd:5' bound to instance 'letter' of component 'alphabet' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'alphabet' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/letter_handle.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'alphabet' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/letter_handle.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'word_handle' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:16]
+INFO: [Synth 8-3491] module 'grid' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/grid.vhd:4' bound to instance 'g1' of component 'grid' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:169]
 INFO: [Synth 8-638] synthesizing module 'grid' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/grid.vhd:14]
+INFO: [Synth 8-3491] module 'square' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/square.vhd:4' bound to instance 'sq' of component 'square' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/grid.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'square' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/square.vhd:13]
+WARNING: [Synth 8-614] signal 'colors_in' is read in the process but is not in the sensitivity list [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/square.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'square' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/square.vhd:13]
 INFO: [Synth 8-256] done synthesizing module 'grid' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/grid.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'GPU' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:19]
-INFO: [Synth 8-3491] module 'vga_sync' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/vga_sync.vhd:5' bound to instance 'vga_driver' of component 'vga_sync' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/imports/Downloads/vga_top.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'GPU' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:18]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/vga_sync.vhd:5' bound to instance 'vga_driver' of component 'vga_sync' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/imports/Downloads/vga_top.vhd:109]
 INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/vga_sync.vhd:21]
 INFO: [Synth 8-256] done synthesizing module 'vga_sync' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/vga_sync.vhd:21]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0.vhd:74' bound to instance 'clk_wiz_0_inst' of component 'clk_wiz_0' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/imports/Downloads/vga_top.vhd:128]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0.vhd:74' bound to instance 'clk_wiz_0_inst' of component 'clk_wiz_0' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/imports/Downloads/vga_top.vhd:126]
 INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0.vhd:83]
 INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:63' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0.vhd:98]
 INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:72]
@@ -72,11 +75,10 @@ INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/cod
 INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:183]
 INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:72]
 INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0.vhd:83]
-INFO: [Synth 8-3491] module 'tetrisComponent' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/tetrisComponent.vhd:6' bound to instance 'tetrisGame' of component 'tetrisComponent' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/imports/Downloads/vga_top.vhd:134]
+INFO: [Synth 8-3491] module 'tetrisComponent' declared at 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/tetrisComponent.vhd:6' bound to instance 'tetrisGame' of component 'tetrisComponent' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/imports/Downloads/vga_top.vhd:132]
 INFO: [Synth 8-638] synthesizing module 'tetrisComponent' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/tetrisComponent.vhd:26]
 INFO: [Synth 8-256] done synthesizing module 'tetrisComponent' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/tetrisComponent.vhd:26]
 INFO: [Synth 8-256] done synthesizing module 'vga_top' (0#1) [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/imports/Downloads/vga_top.vhd:24]
-WARNING: [Synth 8-3848] Net word in module/entity GPU does not have driver. [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:59]
 WARNING: [Synth 8-3848] Net nextShapeGrid in module/entity tetrisComponent does not have driver. [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/tetrisComponent.vhd:9]
 WARNING: [Synth 8-3848] Net scoreOut in module/entity tetrisComponent does not have driver. [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/tetrisComponent.vhd:11]
 WARNING: [Synth 8-3848] Net linesOut in module/entity tetrisComponent does not have driver. [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/tetrisComponent.vhd:12]
@@ -131,20 +133,19 @@ WARNING: [Synth 8-7129] Port downClick in module tetrisComponent is either uncon
 WARNING: [Synth 8-7129] Port centerClick in module tetrisComponent is either unconnected or has no load
 WARNING: [Synth 8-7129] Port resetClick in module tetrisComponent is either unconnected or has no load
 WARNING: [Synth 8-7129] Port pauseClick in module tetrisComponent is either unconnected or has no load
-WARNING: [Synth 8-7129] Port res[31] in module alphabet is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.160 ; gain = 552.602
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1419.520 ; gain = 554.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.160 ; gain = 552.602
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1419.520 ; gain = 554.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.160 ; gain = 552.602
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1419.520 ; gain = 554.297
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1418.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1419.520 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -158,65 +159,64 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/vga_top_prop
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1450.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1499.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1450.930 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1499.473 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'x_norm_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:38]
-WARNING: [Synth 8-327] inferring latch for variable 'char_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd:39]
-WARNING: [Synth 8-327] inferring latch for variable 'x_norm_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:111]
-WARNING: [Synth 8-327] inferring latch for variable 'y_norm_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:112]
-WARNING: [Synth 8-327] inferring latch for variable 'res_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:113]
-WARNING: [Synth 8-327] inferring latch for variable 'space_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:114]
-WARNING: [Synth 8-327] inferring latch for variable 'size_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'color_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/square.vhd:24]
+WARNING: [Synth 8-327] inferring latch for variable 'x_norm_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 'y_norm_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 'word_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'res_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 'space_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'size_reg' [C:/codes/project digital/design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd:76]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 1     
-	   3 Input   11 Bit       Adders := 1     
 	   4 Input   11 Bit       Adders := 1     
-	   2 Input   11 Bit       Adders := 2     
-	   2 Input   10 Bit       Adders := 2     
+	   3 Input   11 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 11    
+	   2 Input   10 Bit       Adders := 3     
 +---Registers : 
-	               12 Bit    Registers := 1     
 	               11 Bit    Registers := 4     
 	                4 Bit    Registers := 3     
 	                1 Bit    Registers := 2     
-+---Multipliers : 
-	               4x32  Multipliers := 4     
-	               3x32  Multipliers := 1     
 +---Muxes : 
+	   8 Input   30 Bit        Muxes := 1     
 	   2 Input   12 Bit        Muxes := 1     
-	   4 Input   12 Bit        Muxes := 1     
-	   2 Input   11 Bit        Muxes := 9     
-	  12 Input    2 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 1     
+	   8 Input    5 Bit        Muxes := 1     
+	   7 Input    5 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
 	   6 Input    1 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -233,7 +233,6 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port res[31] in module alphabet is either unconnected or has no load
 WARNING: [Synth 8-7129] Port leftClickButton in module vga_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rightClickButton in module vga_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port upClickButton in module vga_top is either unconnected or has no load
@@ -241,29 +240,31 @@ WARNING: [Synth 8-7129] Port downClickButton in module vga_top is either unconne
 WARNING: [Synth 8-7129] Port centerClickButton in module vga_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port resetClickButton in module vga_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port pauseClickButton in module vga_top is either unconnected or has no load
-WARNING: [Synth 8-3332] Sequential element (my_gpu/wh1/char_reg[3]) is unused and will be removed from module vga_top.
-WARNING: [Synth 8-3332] Sequential element (my_gpu/size_reg[0]) is unused and will be removed from module vga_top.
-WARNING: [Synth 8-3332] Sequential element (my_gpu/y_norm_reg[10]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (my_gpu/g1/sq/color_reg[11]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (my_gpu/word_reg[28]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (my_gpu/word_reg[25]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (my_gpu/size_reg[1]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (my_gpu/x_norm_reg[10]) is unused and will be removed from module vga_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -281,37 +282,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -327,44 +328,48 @@ Report Cell Usage:
 +------+-----------+------+
 |      |Cell       |Count |
 +------+-----------+------+
-|1     |BUFG       |     3|
-|2     |CARRY4     |    35|
-|3     |LUT1       |     7|
-|4     |LUT2       |    59|
-|5     |LUT3       |    93|
-|6     |LUT4       |    36|
-|7     |LUT5       |    43|
-|8     |LUT6       |    82|
+|1     |BUFG       |     2|
+|2     |CARRY4     |    70|
+|3     |LUT1       |    19|
+|4     |LUT2       |   144|
+|5     |LUT3       |    65|
+|6     |LUT4       |   152|
+|7     |LUT5       |    81|
+|8     |LUT6       |   151|
 |9     |MMCME2_ADV |     1|
-|10    |MUXF7      |     4|
-|11    |FDRE       |    53|
-|12    |LD         |    33|
-|13    |IBUF       |     1|
-|14    |OBUF       |    14|
+|10    |FDRE       |    47|
+|11    |FDSE       |     8|
+|12    |LD         |    43|
+|13    |LDC        |     8|
+|14    |LDCP       |     2|
+|15    |IBUF       |     1|
+|16    |OBUF       |    14|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1499.473 ; gain = 634.250
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:54 . Memory (MB): peak = 1450.930 ; gain = 552.602
-Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1450.930 ; gain = 585.371
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:05 . Memory (MB): peak = 1499.473 ; gain = 554.297
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1499.473 ; gain = 634.250
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1450.930 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1499.473 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 124 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1462.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1499.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 33 instances were transformed.
-  LD => LDCE: 33 instances
+  A total of 53 instances were transformed.
+  LD => LDCE: 43 instances
+  LDC => LDCE: 8 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 2 instances
 
-Synth Design complete | Checksum: 474669d9
+Synth Design complete | Checksum: d8b69eaa
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+56 Infos, 78 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1462.168 ; gain = 1007.133
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1462.168 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:18 . Memory (MB): peak = 1499.473 ; gain = 1044.504
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1499.473 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/codes/project digital/design/CPE-487-Final/project_1/project_1.runs/synth_1/vga_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vga_top_utilization_synth.rpt -pb vga_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 20 00:34:35 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 20 08:00:44 2023...
