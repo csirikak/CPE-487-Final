@@ -1,0 +1,175 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Dec 20 16:36:46 2023
+| Host         : Senku running 64-bit major release  (build 9200)
+| Command      : report_drc -file vga_top_drc_routed.rpt -pb vga_top_drc_routed.pb -rpx vga_top_drc_routed.rpx
+| Design       : vga_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 26
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 25         |
++----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net my_gpu/g1/sq/color_reg[7]_i_2_n_0 is a gated clock net sourced by a combinational pin my_gpu/g1/sq/color_reg[7]_i_2/O, cell my_gpu/g1/sq/color_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net my_gpu/space_reg[2]/G0 is a gated clock net sourced by a combinational pin my_gpu/space_reg[2]/L3_2/O, cell my_gpu/space_reg[2]/L3_2 (in my_gpu/space_reg[2] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net my_gpu/space_reg[2]_rep/G0 is a gated clock net sourced by a combinational pin my_gpu/space_reg[2]_rep/L3_2/O, cell my_gpu/space_reg[2]_rep/L3_2 (in my_gpu/space_reg[2]_rep macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net my_gpu/space_reg[3]/G0 is a gated clock net sourced by a combinational pin my_gpu/space_reg[3]/L3_2/O, cell my_gpu/space_reg[3]/L3_2 (in my_gpu/space_reg[3] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net my_gpu/word_reg[0]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[0]/L3_2/O, cell my_gpu/word_reg[0]/L3_2 (in my_gpu/word_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net my_gpu/word_reg[12]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[12]/L3_2/O, cell my_gpu/word_reg[12]/L3_2 (in my_gpu/word_reg[12] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net my_gpu/word_reg[13]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[13]/L3_2/O, cell my_gpu/word_reg[13]/L3_2 (in my_gpu/word_reg[13] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net my_gpu/word_reg[14]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[14]/L3_2/O, cell my_gpu/word_reg[14]/L3_2 (in my_gpu/word_reg[14] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net my_gpu/word_reg[18]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[18]/L3_2/O, cell my_gpu/word_reg[18]/L3_2 (in my_gpu/word_reg[18] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net my_gpu/word_reg[19]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[19]/L3_2/O, cell my_gpu/word_reg[19]/L3_2 (in my_gpu/word_reg[19] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net my_gpu/word_reg[1]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[1]/L3_2/O, cell my_gpu/word_reg[1]/L3_2 (in my_gpu/word_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net my_gpu/word_reg[20]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[20]/L3_2/O, cell my_gpu/word_reg[20]/L3_2 (in my_gpu/word_reg[20] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net my_gpu/word_reg[22]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[22]/L3_2/O, cell my_gpu/word_reg[22]/L3_2 (in my_gpu/word_reg[22] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net my_gpu/word_reg[23]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[23]/L3_2/O, cell my_gpu/word_reg[23]/L3_2 (in my_gpu/word_reg[23] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net my_gpu/word_reg[24]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[24]/L3_2/O, cell my_gpu/word_reg[24]/L3_2 (in my_gpu/word_reg[24] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net my_gpu/word_reg[27]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[27]/L3_2/O, cell my_gpu/word_reg[27]/L3_2 (in my_gpu/word_reg[27] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net my_gpu/word_reg[2]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[2]/L3_2/O, cell my_gpu/word_reg[2]/L3_2 (in my_gpu/word_reg[2] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net my_gpu/word_reg[3]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[3]/L3_2/O, cell my_gpu/word_reg[3]/L3_2 (in my_gpu/word_reg[3] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net my_gpu/word_reg[4]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[4]/L3_2/O, cell my_gpu/word_reg[4]/L3_2 (in my_gpu/word_reg[4] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net my_gpu/word_reg[5]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[5]/L3_2/O, cell my_gpu/word_reg[5]/L3_2 (in my_gpu/word_reg[5] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net my_gpu/word_reg[6]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[6]/L3_2/O, cell my_gpu/word_reg[6]/L3_2 (in my_gpu/word_reg[6] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net my_gpu/word_reg[7]/G0 is a gated clock net sourced by a combinational pin my_gpu/word_reg[7]/L3_2/O, cell my_gpu/word_reg[7]/L3_2 (in my_gpu/word_reg[7] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net vga_driver/E[0] is a gated clock net sourced by a combinational pin vga_driver/x_norm_reg[9]_i_2/O, cell vga_driver/x_norm_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net vga_driver/num__0 is a gated clock net sourced by a combinational pin vga_driver/num_reg[15]_i_1/O, cell vga_driver/num_reg[15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net vga_driver/pixel_col_reg[8]_3[0] is a gated clock net sourced by a combinational pin vga_driver/word_reg[27]_i_1/O, cell vga_driver/word_reg[27]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

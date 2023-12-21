@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1703107978" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/tetrisComponent.dcp">
+  <File Type="PA-TCL" Name="vga_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="vga_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="vga_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="vga_top.vds"/>
+  <File Type="RDS-UTIL" Name="vga_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="vga_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="vga_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="vga_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="vga_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ChannelCombiner.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/ChannelCombiner.vhd"/>
+        <Attr Name="ImportTime" Val="1703095846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ClkDiv2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/ClkDiv2.vhd"/>
+        <Attr Name="ImportTime" Val="1703095931"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MusicBox.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/MusicBox.vhd"/>
+        <Attr Name="ImportTime" Val="1703095942"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MusicClock.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/MusicClock.vhd"/>
+        <Attr Name="ImportTime" Val="1703095965"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Square Wave Generator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/Square Wave Generator.vhd"/>
+        <Attr Name="ImportTime" Val="1703096006"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TetrisMusic.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/TetrisMusic.vhd"/>
+        <Attr Name="ImportTime" Val="1703095827"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_wiz_0.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0.vhd"/>
+        <Attr Name="ImportTime" Val="1703042177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_wiz_0_clk_wiz.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd"/>
+        <Attr Name="ImportTime" Val="1703042215"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dac.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/dac.vhd"/>
+        <Attr Name="ImportTime" Val="1703096018"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gpu.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/gpu.vhd"/>
+        <Attr Name="ImportTime" Val="1703105116"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/grid.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/grid.vhd"/>
+        <Attr Name="ImportTime" Val="1703074882"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/intotoword.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/intotoword.vhd"/>
+        <Attr Name="ImportTime" Val="1703107975"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/letter_handle.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/letter_handle.vhd"/>
+        <Attr Name="ImportTime" Val="1703070155"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/square.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/square.vhd"/>
+        <Attr Name="ImportTime" Val="1703077140"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tetris_package.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/Final Project.srcs/sources_1/new/tetris_package.vhd"/>
+        <Attr Name="ImportTime" Val="1703041868"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tetrisComponent.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/Final Project.srcs/sources_1/new/tetrisComponent.vhd"/>
+        <Attr Name="ImportTime" Val="1703041868"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_sync.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/vga_sync.vhd"/>
+        <Attr Name="ImportTime" Val="1703042201"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/word_handle.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/sources_1/new/word_handle.vhd"/>
+        <Attr Name="ImportTime" Val="1703070252"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/vga_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/vga_top.vhd"/>
+        <Attr Name="ImportTime" Val="1703041269"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="vga_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/vga_top.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/constrs_1/new/vga_top.xdc"/>
+        <Attr Name="ImportTime" Val="1703096704"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/tetrisComponent.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../design/CPE-487-Final/project_1/project_1.srcs/utils_1/imports/synth_1/tetrisComponent.dcp"/>
+        <Attr Name="ImportTime" Val="1703107911"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

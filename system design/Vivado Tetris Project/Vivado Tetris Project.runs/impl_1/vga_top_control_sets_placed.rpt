@@ -1,0 +1,121 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Dec 20 16:35:56 2023
+| Host         : Senku running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file vga_top_control_sets_placed.rpt
+| Design       : vga_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    43 |
+|    Minimum number of control sets                        |    43 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   213 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    43 |
+| >= 0 to < 4        |    27 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              89 |           53 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             175 |           49 |
+| Yes          | No                    | No                     |               3 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               8 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+-----------------+-----------------------------------+------------------+----------------+--------------+
+|            Clock Signal            |  Enable Signal  |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------+-----------------+-----------------------------------+------------------+----------------+--------------+
+|  my_gpu/space_reg[2]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[20]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[22]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  clk_wiz_0_inst/U0/clk_out1        |                 | vga_driver/hsync0                 |                1 |              1 |         1.00 |
+|  clk_wiz_0_inst/U0/clk_out1        |                 | vga_driver/vsync0                 |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[2]/G0             |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[1]/G0             |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[23]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[19]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[13]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[18]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[14]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[0]/G0             |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/space_reg[3]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[12]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/space_reg[2]_rep/G0        |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[3]/G0             |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[27]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[24]/G0            |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[7]/G0             |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[4]/G0             |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[5]/G0             |                 |                                   |                1 |              1 |         1.00 |
+|  my_gpu/word_reg[6]/G0             |                 |                                   |                1 |              1 |         1.00 |
+|  clk_wiz_0_inst/U0/clk_out1        | vga_driver/eqOp |                                   |                3 |              3 |         1.00 |
+|  vga_driver/num__0                 |                 |                                   |                3 |              3 |         1.00 |
+|  dac_LRCK_OBUF_BUFG                |                 |                                   |                2 |              3 |         1.50 |
+|  clk_in_IBUF_BUFG                  |                 |                                   |                2 |              3 |         1.50 |
+|  vga_driver/pixel_col_reg[8]_3[0]  |                 | vga_driver/AS[0]                  |                2 |              5 |         2.50 |
+| ~music/out[0]                      |                 |                                   |                2 |              5 |         2.50 |
+|  music/mc1/MusClk                  |                 | music/mb2/counter0_carry_n_1      |                2 |              7 |         3.50 |
+|  music/mc1/MusClk                  |                 | music/mb1/clear                   |                2 |              7 |         3.50 |
+|  music/mc1/MusClk                  |                 | music/mb3/counter0_carry_n_1      |                2 |              7 |         3.50 |
+|  clk_wiz_0_inst/U0/clk_out1        | vga_driver/eqOp | vga_driver/v_cnt0                 |                2 |              8 |         4.00 |
+|  my_gpu/g1/sq/color_reg[7]_i_2_n_0 |                 | my_gpu/g1/sq/color_reg[7]_i_3_n_0 |                2 |              8 |         4.00 |
+|  clk_wiz_0_inst/U0/clk_out1        |                 | vga_driver/clear                  |                4 |             11 |         2.75 |
+|  clk_wiz_0_inst/U0/clk_out1        |                 | vga_driver/green_out[3]_i_1_n_0   |                3 |             12 |         4.00 |
+|  music/clk50/clk                   |                 |                                   |                4 |             12 |         3.00 |
+|  vga_driver/E[0]                   |                 |                                   |               10 |             20 |         2.00 |
+|  clk_wiz_0_inst/U0/clk_out1        |                 |                                   |                9 |             22 |         2.44 |
+|  clk_in_IBUF_BUFG                  |                 | music/mc1/counter0_carry__1_n_0   |                6 |             23 |         3.83 |
+|  dac_LRCK_OBUF_BUFG                |                 | music/a2/tmp_clk0_carry__2_n_0    |                8 |             31 |         3.88 |
+|  dac_LRCK_OBUF_BUFG                |                 | music/a1/tmp_clk0_carry__2_n_0    |                8 |             31 |         3.88 |
+|  dac_LRCK_OBUF_BUFG                |                 | music/a3/tmp_clk0_carry__2_n_0    |                8 |             31 |         3.88 |
++------------------------------------+-----------------+-----------------------------------+------------------+----------------+--------------+
+
+
