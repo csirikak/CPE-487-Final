@@ -7,7 +7,62 @@
       * This isn't required for the game to work, but there won't be any music without it.
 
 ## Game Logic
-
+Tetris is a 80s game from the Soviet Union, consisting of 7 tetrominos (5 when considering chiral pairs). A game world of 10x20 grids, the objective is to move the tetrominos into completed rows while they tick downwards at an ever increasing pace. The user is allowed to perform linear translation and rotation operations on the active shape.
+* The game logic must perform the following:
+  * Spawn a new shape randomly from a list of tetrominos
+  * Move the shape downward on every game tick
+  * Allow the user to perform linear translation and rotation operations asynchronously, but not during the (nearly instantaneous IRL but not in VHDL) downward movement.
+  * Merge the active shape with the grid on (bottom) collision with another block or grid bottom.
+  * Handle user inputs to perform translation and rotation operations once per click.
+  * Pass the color of a grid location given the x and y location to the Display Logic.
+### tetrisComponent.vhd
+This file contains all the game logic
+* Functions:
+  * `lookupColor`
+    *  returns the 3 bit color when given a shape.
+  * `nextPieceSelection`
+    * returns a new piece when given an integer (intended to be used with a PRNG)
+  * `checkRotationCollision`
+    * returns whether a shape will collide if rotated. It accomplishes this by creating a ghost shape and performing a rotation operation, then checking for overlaps.
+    * Inputs:
+      * current active shape
+      * the grid state
+      * rotation direction (0 -- CW, 1 -- CCW) 
+* Processes:
+  * `clockProcess`
+    * This increments the counter with each 100 MHz clock cycle
+    * This also allows for pausing by stopping the increment.
+  * `gameTickToggle`
+    * This toggles the signal `gameTick` to coordinate the falling of the blocks, the check for completed rows, and the spawning of new shapes.
+    * The `gameTick` is meant to speed up but the past implementation was unstable, so it is fixed for now.
+  * `gameTickProcess`
+    * This handles the logic for getting the next shape and the following things:
+    * Handling reset operations: clearing the grid, getting a new shape, resetting the tick value.
+    * Move the active shape with each rising edge of the tick
+    * Add the active shape to the grid when the active shape collides on the bottom and spawning a new shape
+    * TODO: Clear the grid when a row is completed.
+    * Send a signal when the process is busy manupulating the active shape.
+  * `processMovement`
+    * This is meant to coordinate the movement from the user and `gameTickProcess` and prevent writing to `activeShape` simultaneously.
+    * By using if and elsif statements as well as wait for constant values it avoids collisions
+    * Ideally, each source of change would emit a signal and once 0, `activeShape` would be modified.
+  * `processUserMovement`
+    * This is meant to perform translation and rotation operations then pass the resulting shape to `processMovement`
+    * The operation should occur once with each press of the button.
+  * `processControls`
+    * This is meant to produce a single pulse that triggers a single operation of `processMovement`, this might be an inherently flawed approach.
+    * The trigger is a press of a button.
+  * `checkCollision`
+    * The collisions are checked whenever the active shape moves, since rotation operations haven't been achieved as of yet, it is possible that the check must happen sooner due to timing issues.
+  * `processBoardOutput`
+    * This processes the requested x and y address from the display logic and returns the current color of the grid or active shape in that location. 
+### tetris_package.vhd
+This file contains the custom types and the constants for the grid and tetrominos.
+* `shapeType` this holds the possible shapes and serves as a reference for the color.
+* `boardType` is a 2D array of cells containing `filled` and `shape`. The `filled` is a binary value indicating whether a cell is filled and `shape` allows a reference to the color.
+* `pieceType` is a 1D array of 4 blocks (`block`) and a `shape` reference
+* `block` contains col and row refering to the location of a block with respect to the grid. Intended for use with active shapes.
+* The rest of the constants are the declarations for the tetronimos.
 ## Display Logic
 
 ### CPE 487 Display Logic Overview
