@@ -80,4 +80,10 @@
    * After all three instances of *Square_Wave_Generator.vhd* generates an audio signal, each of their audio signals is sent into *ChannelCombiner.vhd*, where it takes three inputs, each being a 16-bit signed generated from each instance of SquareWaveGenerator, and then it outputs a single 16-bit signed that represents the combined signal of all three channels.
       * The process to combine the three signals is very simple, I simply made an intermediate integer variable called *combined*, which I then set equal to the TO_INTEGER of all three input audio channels added together.
       * From there, I had another temporary value, *result* which was equal to the TO_SIGNED(combined, 16), which just converted the integer value calculated above, back into a signed so the types would match, this value was then assigned to the output.
-      * I didn't have to worry about any logic to avoid clipping because of my implementation of SquareWaveGenerator, which I chose the signed values of being 10240 and -10240 because I knew that I would be using three channels and that in the event that all three channels were 10240 and were added together, the highest/lowest value that would be output by the channel combiner would be 30720 and -30720, which fits within the 16-bit signed range of (32768,-32768) naturally. 
+      * I didn't have to worry about any logic to avoid clipping because of my implementation of SquareWaveGenerator, which I chose the signed values of being 10240 and -10240 because I knew that I would be using three channels and that in the event that all three channels were 10240 and were added together, the highest/lowest value that would be output by the channel combiner would be 30720 and -30720, which fits within the 16-bit signed range of (32768,-32768) naturally.
+
+### Block Diagram and Video
+![Block Diagram](MusicBoxSchematic.PNG)
+
+https://github.com/csirikak/CPE-487-Final/assets/90861355/0e17b16b-fe72-4b88-b302-b8643e4d9bb4
+
