@@ -82,7 +82,7 @@
       * From there, I had another temporary value, *result* which was equal to the TO_SIGNED(combined, 16), which just converted the integer value calculated above, back into a signed so the types would match, this value was then assigned to the output.
       * I didn't have to worry about any logic to avoid clipping because of my implementation of SquareWaveGenerator, which I chose the signed values of being 10240 and -10240 because I knew that I would be using three channels and that in the event that all three channels were 10240 and were added together, the highest/lowest value that would be output by the channel combiner would be 30720 and -30720, which fits within the 16-bit signed range of (32768,-32768) naturally.
 
-### Block Diagram and Video
+### Block Diagram and Video for Music
 ![Block Diagram](MusicBoxSchematic.PNG)
 
 * This is a block diagram that shows only the music portion of the code. As is shown, the MusicClock feeds into the MusicBox(1-3) instances which provides them their timing singnals necessary for the 107ms note lengths. Each of these also get their own Channel value, of "00", "01" and "10" respectively which makes them each generate a different sequence of 5-bit vectors. Each of these three output their 5-bit CurrentNote vector into their respective WaveGen(1-3) entities, which also have an input for their 48.8KHz audio clock, which they use to generate square waves with a frequency specified by the note. Each WaveGen then outputs their 16-bit signed value of the audio signal to the ChannelCombine entity which combines all three channels of audio into one and sends it into the DAC, which then outputs the final song.  
