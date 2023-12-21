@@ -69,18 +69,15 @@
        * Each of these notes has a calculated value that gets used in the next step, a clock divider, which divides the input 48.8KHz clock by the value found from the table, so in the case of A5, we divide the 48800Hz clock by 55 and get a signal with the frequency of 887Hz, which is as close as we can get to A5's actual value of 880Hz.
        * After we get a new, temporary clock with the desired clock frequency, a function outputs a 16-bit signed with either the value of 10240 or -10240, depending on whether the new clock signal is low or high respectively.
        * Additionally, in my code there is also a note that represents no-note, or no audio for that period, this is when the 5-bit input is "00000" and for that case, no clock division is performed and instead the 16-bit signed output will have a value of 0 for the entire period.
-   
     * To feed the "Square_Wave_Generator.vhd" with notes to play, I created a "MusicBox.vhd" module, which inputs the MusicClock of 18.666Hz, a 2-bit vector which determines which of the three tracks to play, and an output 5-bit vector that gets sent directly into the *Square_Wave_Generator.vhd" module above.
        * The architecture of this module has two parts, a counter that counts at the 18.666Hz clock speed and counts over the range of 0 to 127, and a set of three 128-long tables, each table contains the note sequence for each channel and a note value for each value of the counter.
           * The counter is clocked at the 18.666Hz that is provided to it from the "MusicClock.vhd" module and counts from 0 to 127, once it reaches 127 it'll start over at 0 again.
           * Depending on the input channel, we have three different tables that will be interated downards with the counter, each coresponding to a channel of audio and will result in polyphony once the three channels are combined. So for the first instance of MusicBox, it'll be initialized with a constant Channel value of "00", so it'll iterate down the first list of notes and change it's current note output every clock of the counter. The second channel will be with "01" and that results in a different note list being used and a new note being sent to a *SquareWaveGenerator* instance, same thing for the third channel.
           * Each table ranges from 0 to 127, just like the counter, and the output will be a 5-bit value sent to *SquareWaveGenerator* that coresponds to the note that should be generated, such as "01000" being A5.
-          * Each note and non-note has a fixed length of 107ms using this approach, and will change every clock pulse of MusicClock when the counter is incremented by 1.
-            
+          * Each note and non-note has a fixed length of 107ms using this approach, and will change every clock pulse of MusicClock when the counter is incremented by 1.         
       * This is a brief example of the the note selector works, every 107ms the counter will increase by 1 and move down the list, where the output vector (CurrentNote) becomes the current value assigned to the counter value.
+      
 ![image](https://github.com/csirikak/CPE-487-Final/assets/90861355/6527a93f-5b79-4e2c-9b4e-773e522a04ec)
-
-
 
    * After all three instances of *Square_Wave_Generator.vhd* generates an audio signal, each of their audio signals is sent into *ChannelCombiner.vhd*, where it takes three inputs, each being a 16-bit signed generated from each instance of SquareWaveGenerator, and then it outputs a single 16-bit signed that represents the combined signal of all three channels.
       * The process to combine the three signals is very simple, I simply made an intermediate integer variable called *combined*, which I then set equal to the TO_INTEGER of all three input audio channels added together.
