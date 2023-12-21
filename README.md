@@ -38,6 +38,9 @@
 * 'Square.vhd' encapsulates the equations essential for drawing squares with shadows, contributing to the overall graphics presentation.
 
 ## Music Logic
+* The music logic is similar to a primative midi player that operates on a fixed note duration and uses only square waves, where each note or non-note is 107ms or a whole multiple of 107ms in duration.
+* I used a short tetris midi file I found on an online midi sequencer to create my own note sequences used to create the music. The link to the midi I based my note sequence on is https://onlinesequencer.net/96845  
+
 * The code required to generate and output the tetris theme comes from the following modules. A brief description is included below each:
    * TetrisMusic.vhd
       * This is a modified version of the lab 5 code which retains the code necessary to get the dac output working.
@@ -74,7 +77,7 @@
           * The counter is clocked at the 18.666Hz that is provided to it from the "MusicClock.vhd" module and counts from 0 to 127, once it reaches 127 it'll start over at 0 again.
           * Depending on the input channel, we have three different tables that will be interated downards with the counter, each coresponding to a channel of audio and will result in polyphony once the three channels are combined. So for the first instance of MusicBox, it'll be initialized with a constant Channel value of "00", so it'll iterate down the first list of notes and change it's current note output every clock of the counter. The second channel will be with "01" and that results in a different note list being used and a new note being sent to a *SquareWaveGenerator* instance, same thing for the third channel.
           * Each table ranges from 0 to 127, just like the counter, and the output will be a 5-bit value sent to *SquareWaveGenerator* that coresponds to the note that should be generated, such as "01000" being A5.
-          * Each note and non-note has a fixed length of 107ms using this approach, and will change every clock pulse of MusicClock when the counter is incremented by 1.         
+          * Each note and non-note has a fixed length of 107ms using this approach, and will change every clock pulse of MusicClock when the counter is incremented by 1.       
       * This is a brief example of the the note selector works. When the channel is "00" it'll use this table, so every 107ms the counter will increase by 1 and move down the list, where the output vector (CurrentNote) becomes the current value assigned to the counter value. Once the counter reaches 127, it goes back to 0 and loops.
       
 ![image](https://github.com/csirikak/CPE-487-Final/assets/90861355/6527a93f-5b79-4e2c-9b4e-773e522a04ec)
