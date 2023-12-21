@@ -26,3 +26,11 @@
       * This divides the 100MHz system clock we use to 50MHz to be used as an input clock for the code taken from lab 5 because that code was written with a 50MHz system clock in mind.
    * MusicClock.vhd
       * This divides the 100MHz system clock down to be a 18.666Hz clock, which powers the MusicBox's logic.
+
+### Modifications and created code for Music Logic
+* Modifications
+  * I modified the top-level module from lab 5 *siren.vhd* to create the top-level module *TetrisMusic.vhd*, which retained the same timing logic and logic necessary to get the DAC working, but has all of the code and logic I used to generate the music and signals that are then combined to be input into the dac code in a similar way that the wail instance sent it's data into the DAC.
+  * I also kept the *dac_if* module that was in lab 5 and simplified the name to just be *dac* since it also was necessary to get the DAC to operate properly.
+
+ * Created code
+    * I created two different clock dividers which were necessary to ensure the DAC operated as intended and also a clock divider that sends its clock into the *MusicBox*
