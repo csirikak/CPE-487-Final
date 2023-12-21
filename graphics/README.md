@@ -1,28 +1,26 @@
-# CPE 487 Tetris Final Project
+##CPE 487 Display Logic Overview
+*In pursuit of optimal graphics design, a primary objective was to minimize memory usage, prompted by initial challenges encountered when attempting to store 1280x720x3 in block RAM. Additionally, our aim was to demonstrate proficiency in leveraging both raster and vector graphics.
 
-* Our project was to create a working Tetris video game with music that runs entirely and natively on the provided FPGA, the Nexys A7-100T.
-* The project is designed to be stored and run natively on the Nexys A7-100T and requires the following external parts:
-  * A VGA Monitor and cable to display the game from the VGA output on the FPGA.
-  * A Pmod I2S DAC and speaker to output the game music.
-      * This isn't required for the game to work, but there won't be any music without it.
+##gpu.vhd
+*The principal file within the graphics module, 'gpu.vhd,' serves to partition the screen into distinct div/containers, allowing for differential treatment and the application of various outputs from different modules.
 
-## Game Logic
+##vga_sync.vhd
+*The 'vga_sync.vhd' file is responsible for generating synchronization signals for the VGA. Adapted from lab 3, it has been updated to accommodate a resolution of 1280x720.
 
-## Display Logic
+##clk_wiz_0.vhd and clk_wiz_0_clk_wiz.vhd
+*These files are instrumental in generating a pixel clock from the built-in 100MHz clock specifically for the VGA.
 
-## Music Logic
-* The code required to generate and output the tetris theme comes from the following modules. A brief description is included below each:
-   * TetrisMusic.vhd
-      * This is a modified version of the lab 5 code which retains the code necessary to get the dac output working.
-   * dac.vhd
-      * This is the same module taken from the *dac_if* module of lab 5, this is also required to get the dac output working.
-   * Square_Wave_Generator.vhd
-      * A variable clock divider that generates specific square wave frequencies that become the audio signal that eventually gets output by the DAC. 
-   * MusicBox.vhd
-      * This module iterates through one of three 128-entry long note lists, and outputs a 5-bit vector depending on the note stored.
-   * ChannelCombiner.vhd
-      * This module takes the outputs of the three audio signals sent to it by the three square wave generator entities and combined their audio signals into a single 16-bit signed to be sent to the DAC. 
-   * ClkDiv2.vhd
-      * This divides the 100MHz system clock we use to 50MHz to be used as an input clock for the code taken from lab 5 because that code was written with a 50MHz system clock in mind.
-   * MusicClock.vhd
-      * This divides the 100MHz system clock down to be a 18.666Hz clock, which powers the MusicBox's logic.
+##word_handle.vhd
+*By dividing the container into six smaller containers and normalizing the x and y coordinates, 'word_handle.vhd' sets the stage for utilization in 'letter_handle.vhd.'
+
+##letter_handle.vhd
+*Within 'letter_handle.vhd' resides a lookup table encompassing all characters employed in the project. It produces color outputs based on the given x and y coordinates.
+
+##inttoword.vhd
+*Serving as a component interface, 'inttoword.vhd' streamlines the process of displaying numbers by taking integer inputs and generating word outputs for 'word_handle.'
+
+##Grid
+*This module divides the container into 32x32 squares, ask for color information, and conveys data, including color, x, and y coordinates, to 'square.vhd.'
+
+##square.vhd
+*'Square.vhd' encapsulates the equations essential for drawing squares with shadows, contributing to the overall graphics presentation.
