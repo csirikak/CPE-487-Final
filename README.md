@@ -85,5 +85,7 @@
 ### Block Diagram and Video
 ![Block Diagram](MusicBoxSchematic.PNG)
 
+* This is a block diagram that shows only the music portion of the code. As is shown, the MusicClock feeds into the MusicBox(1-3) instances which provides them their timing singnals necessary for the 107ms note lengths. Each of these also get their own Channel value, of "00", "01" and "10" respectively which makes them each generate a different sequence of 5-bit vectors. Each of these three output their 5-bit CurrentNote vector into their respective WaveGen(1-3) entities, which also have an input for their 48.8KHz audio clock, which they use to generate square waves with a frequency specified by the note. Each WaveGen then outputs their 16-bit signed value of the audio signal to the ChannelCombine entity which combines all three channels of audio into one and sends it into the DAC, which then outputs the final song.  
+
 https://github.com/csirikak/CPE-487-Final/assets/90861355/0e17b16b-fe72-4b88-b302-b8643e4d9bb4
 
