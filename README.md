@@ -89,3 +89,8 @@
 
 https://github.com/csirikak/CPE-487-Final/assets/90861355/0e17b16b-fe72-4b88-b302-b8643e4d9bb4
 
+## Summary
+Each member of the group worked on a separate part of the project code
+* Armand Rome worked on the music and music logic
+* Chiripol Sirikakan worked on the game Logic
+* Dorzhi Denisov worked on the graphics and display logic
